@@ -19,5 +19,21 @@ const HALF_LIFE_PERIOD = 5730;
  */
 export default function dateSample(/* sampleActivity */) {
   throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+
+  const HALF_LIFE_PERIOD = 10;
+  let MODERN_ACTIVITY;
+
+  function isNumber (str) {
+    if (typeof str != "string") return false 
+    return !isNaN(str) && !isNaN(parseFloat(str))
+  }
+
+  if (isNumber(string)) {
+    const MODERN_ACTIVITY = +string;
+    let radiocarbonDating = Math.floor(MODERN_ACTIVITY / HALF_LIFE_PERIOD);
+    return radiocarbonDating
+  } else {
+    return false
+  }
 }
+

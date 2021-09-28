@@ -15,5 +15,14 @@ import { NotImplementedError } from '../extensions/index.js';
  */
 export default function createDreamTeam(/* members */) {
   throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+  
+  let password = '';
+  arr.forEach(element => {
+    // console.log(typeof element);
+    if (typeof element === 'string') {
+      password += element[0].toUpperCase();
+    } 
+  })
+  
+  return password.split('').sort().join('');
 }
