@@ -17,23 +17,22 @@ const HALF_LIFE_PERIOD = 5730;
  * dateSample('WOOT!') => false
  *
  */
-export default function dateSample(/* sampleActivity */) {
-  throw new NotImplementedError('Not implemented');
+export default function dateSample(sampleActivity) {
 
-  const HALF_LIFE_PERIOD = 10;
-  let MODERN_ACTIVITY;
+  // const HALF_LIFE_PERIOD = 10;
+  // let MODERN_ACTIVITY;
 
-  function isNumber (str) {
-    if (typeof str != "string") return false 
-    return !isNaN(str) && !isNaN(parseFloat(str))
-  }
+  // function isNumber (str) {
+  //   if (typeof str != "string") return false 
+  //   return !isNaN(str) && !isNaN(parseFloat(str))
+  // }
 
-  if (isNumber(string)) {
-    const MODERN_ACTIVITY = +string;
-    let radiocarbonDating = Math.floor(MODERN_ACTIVITY / HALF_LIFE_PERIOD);
-    return radiocarbonDating
-  } else {
-    return false
-  }
+  // if (isNumber(string)) {
+  //   const MODERN_ACTIVITY = +string;
+  //   let radiocarbonDating = Math.floor(MODERN_ACTIVITY / HALF_LIFE_PERIOD);
+  //   return radiocarbonDating
+  // } else {
+  //   return false
+  // }
 }
 

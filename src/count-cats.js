@@ -16,18 +16,17 @@ import {
  * ]) => 3`
  *
  */
-export default function countCats( /* matrix */ ) {
-  throw new NotImplementedError('Not implemented');
+
+export default function countCats(matrix) {
 
   let searchSubject = '^^'
   let count = 0;
+  let oneArray = matrix.flat();
 
-
-  array.forEach(element => {
-    if (element.includes(searchSubject, 0)) {
+  oneArray.forEach(element => {
+    if (typeof element === 'string' && element.length === 2 && element.includes(searchSubject)) {
       count++;
     }
   });
   return count;
-
 }
